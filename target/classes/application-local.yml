@@ -1,0 +1,12 @@
+server:
+  port: 8004
+spring:
+  main:
+    banner-mode: console
+  application:
+    name: micro-servico-test
+
+quem:
+  come:
+    muita:
+      mulher: "Hiverton gostosão"
