@@ -11,5 +11,10 @@ public class HelloController {
 	public String index() {
 		return "Greetings from Spring Boot!";
 	}
+	
+	@RequestMapping("/novo-metodo")
+	public String novoMetodo() {
+		return "alteração";
+	}
 
 }
