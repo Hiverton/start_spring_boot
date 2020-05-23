@@ -12,7 +12,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>hello-world-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>spring-boot</name>
     <description>Demo project for Spring Boot</description>
 
