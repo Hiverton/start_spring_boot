@@ -10,7 +10,7 @@ pipeline {
       
       stage('Build') {
          steps {
-            bat 'd:/Projetos/apache-maven-3.6.3/bin/mvn clean package'
+            bat 'd:/Projetos/apache-maven-3.6.3/bin/mvn package'
          }
       }
       
