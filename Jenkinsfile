@@ -16,7 +16,7 @@ pipeline {
       
       stage('Build image') {
          steps {
-            bat 'docker build -t hywerthon/hello-world d:'
+            bat 'docker build -f ./Dockerfile -t hywerthon/hello-world c:'
          }
       }
       
