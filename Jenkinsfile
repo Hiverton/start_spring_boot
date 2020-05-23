@@ -34,7 +34,7 @@ pipeline {
       
       stage('run image') {
          steps {
-            bat 'docker run -d -p 8004:8004 --name hello-world-api'
+            bat 'docker run -d -p 8004:8004 --name hello-world-api docker.io/hywerthon/hello-world:latest'
          }
       }
       
