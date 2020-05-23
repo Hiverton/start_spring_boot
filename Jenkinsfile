@@ -14,12 +14,6 @@ pipeline {
          }
       }
       
-      stage('delete images') {
-         steps {
-            bat 'docker system prune -a -y'
-         }
-      }
-      
       stage('Build image') {
          steps {
             bat 'docker build -t hywerthon/hello-world d:'
