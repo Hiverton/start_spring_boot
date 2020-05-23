@@ -16,7 +16,7 @@ pipeline {
       
       stage('delete images') {
          steps {
-            bat 'docker system prune -a'
+            bat 'docker system prune -a -y'
          }
       }
       
