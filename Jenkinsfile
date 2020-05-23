@@ -32,6 +32,12 @@ pipeline {
          }
       }
       
+      stage('remove image') {
+         steps {
+            bat 'docker rm -f hello-world-api'
+         }
+      }
+      
       stage('run image') {
          steps {
             bat 'docker run -d -p 8004:8004 --name hello-world-api docker.io/hywerthon/hello-world:latest'
