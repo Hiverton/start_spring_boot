@@ -1,16 +1,14 @@
 pipeline {
    agent any
    stages {
-      stage('Build') {
+      stage('Clone') {
          steps {
             git 'https://github.com/Hiverton/start_spring_boot.git'
-            bat 'mvn --version'
          }
-
-         post {
-            success {
-               archiveArtifacts 'target/*.jar'
-            }
+      }
+      stage('Build') {
+         steps {
+            bat 'mvn --version'
          }
       }
    }
