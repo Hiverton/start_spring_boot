@@ -38,7 +38,7 @@ pipeline {
          }
       }
       
-      stage('push image') {
+      stage('run image') {
          steps {
             bat 'docker run -d -p 8004:8004 -name hello-world-api'
          }
