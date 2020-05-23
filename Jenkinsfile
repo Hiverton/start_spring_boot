@@ -8,7 +8,7 @@ pipeline {
       }
       stage('Build') {
          steps {
-            bat 'D:\Projetos\apache-maven-3.6.3\bin\mvn --version'
+            bat 'D:/Projetos/apache-maven-3.6.3/bin/mvn --version'
          }
       }
    }
